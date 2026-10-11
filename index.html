@@ -10,7 +10,20 @@
   <meta name="author" content="André Pedroso">
   <meta property="og:title" content="André Pedroso | Analista de Infraestrutura e Suporte">
   <meta property="og:description" content="Profissional de TI com +15 anos de experiência no Rio de Janeiro. Liderança técnica, operações críticas e gestão de ambientes.">
-  <meta property="og:image" content="https://andrepedrosoinfra.github.io/img/capa.png">
+  <meta property="og:image" content="https://andrepedrosoinfra.github.io/assets/img/theme/og-capa.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="André Pedroso - Analista de Infraestrutura e Suporte de TI">
+  <meta property="og:locale" content="pt_BR">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="André Pedroso | Analista de Infraestrutura e Suporte">
+  <meta name="twitter:description" content="+15 anos de experiência em infraestrutura, Microsoft 365 e gestão de ambientes críticos.">
+  <meta name="twitter:image" content="https://andrepedrosoinfra.github.io/assets/img/theme/og-capa.jpg">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0b0f17" media="(prefers-color-scheme: dark)">
+  <link rel="canonical" href="https://andrepedrosoinfra.github.io/">
+  <link rel="preload" as="image" href="assets/img/profile/profile-bg-5.webp" fetchpriority="high">
   <meta property="og:url" content="https://andrepedrosoinfra.github.io">
   <meta property="og:type" content="website">
   <script>
@@ -19,6 +32,41 @@
       try { t = localStorage.getItem('theme') === 'dark' ? 'dark' : 'light'; } catch (e) {}
       document.documentElement.setAttribute('data-theme', t);
     })();
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "André Pedroso",
+  "jobTitle": "Analista de Infraestrutura e Suporte",
+  "description": "Analista de Infraestrutura e Suporte com +15 anos de experiência em liderança técnica, ambientes Microsoft e gestão de infraestrutura corporativa.",
+  "url": "https://andrepedrosoinfra.github.io/",
+  "image": "https://andrepedrosoinfra.github.io/assets/img/profile/profile-square-3.webp",
+  "email": "mailto:andrelp.pedroso@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Rio de Janeiro",
+    "addressRegion": "RJ",
+    "addressCountry": "BR"
+  },
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Marko Sistemas Metálicos"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/in/andrelpedroso"
+  ],
+  "knowsAbout": [
+    "Infraestrutura de TI",
+    "Microsoft Office 365",
+    "Active Directory",
+    "Redes de computadores",
+    "Monitoramento com Zabbix e Grafana",
+    "Governança de TI",
+    "LGPD",
+    "Suporte técnico N1 e N2"
+  ]
+}
   </script>
   <link href="assets/img/theme/favicon-blue.png" rel="icon" type="image/png">
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -33,6 +81,8 @@
 </head>
 
 <body class="index-page">
+<a class="skip-link" href="#main">Ir para o conteúdo</a>
+<div id="read-progress" aria-hidden="true"></div>
 <header id="header" class="header d-flex align-items-center fixed-top">
 <div class="container-fluid container-xl position-relative d-flex align-items-center">
 <a href="index.html" class="logo d-flex align-items-center me-auto">  
@@ -50,6 +100,10 @@
   </ul>
   <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
   </nav>
+  <div class="theme-switch lang-switch" role="group" aria-label="Idioma do site">
+  <button type="button" data-lang-set="pt" aria-pressed="true" title="Português"><span>PT</span></button>
+  <button type="button" data-lang-set="en" aria-pressed="false" title="English"><span>EN</span></button>
+  </div>
   <div class="theme-switch" role="group" aria-label="Tema do site">
   <button type="button" data-theme-set="dark" aria-pressed="false" title="Tema escuro"><i class="bi bi-moon-stars-fill"></i><span>Escuro</span></button>
   <button type="button" data-theme-set="light" aria-pressed="true" title="Tema claro"><i class="bi bi-sun-fill"></i><span>Claro</span></button>
@@ -58,9 +112,9 @@
   </div>
   </header>
 
-<main class="main">
+<main class="main" id="main">
 <section id="hero" class="hero section dark-background">
-<img src="assets/img/profile/profile-bg-5.webp" alt="" data-aos="fade-in">
+<img src="assets/img/profile/profile-bg-5.webp" alt="" data-aos="fade-in" fetchpriority="high" decoding="async">
 <div class="container" data-aos="fade-up" data-aos-delay="100">
 <div class="row justify-content-center">
 <div class="col-lg-8 text-center">
@@ -69,9 +123,37 @@
 <p><span class="typed" data-typed-items="Analista de Infraestrutura, Analista de Suporte, Líder Técnico, Gestão de Ambientes"></span><span class="typed-cursor" aria-hidden="true"></span></p>
 <div class="hero-cta">
 <a href="#about" class="btn-hero btn-hero-primary">Conheça meu perfil</a>
-<a href="arquivos/analista_andrepedroso.pdf" target="_blank" class="btn-hero btn-hero-outline"><i class="bi bi-download"></i> Baixar CV</a>
+<a href="arquivos/analista_andrepedroso.pdf" target="_blank" rel="noopener noreferrer" class="btn-hero btn-hero-outline"><i class="bi bi-download"></i> Baixar CV</a>
 </div>
+
 </div></div></div>
+</section>
+
+<section id="numeros" class="stats section" aria-label="Resultados em números">
+<div class="container">
+<div class="stats-grid">
+<div class="stat-item" data-aos="fade-up">
+<i class="bi bi-clock-history" aria-hidden="true"></i>
+<strong class="stat-value"><span class="count" data-count="15">15</span>+</strong>
+<span class="stat-label">anos de experiência em TI</span>
+</div>
+<div class="stat-item" data-aos="fade-up" data-aos-delay="80">
+<i class="bi bi-pc-display" aria-hidden="true"></i>
+<strong class="stat-value"><span class="count" data-count="25000">25.000</span></strong>
+<span class="stat-label">dispositivos controlados e testados</span>
+</div>
+<div class="stat-item" data-aos="fade-up" data-aos-delay="160">
+<i class="bi bi-people" aria-hidden="true"></i>
+<strong class="stat-value"><span class="count" data-count="170">170</span>+</strong>
+<span class="stat-label">colaboradores atendidos em um só ambiente</span>
+</div>
+<div class="stat-item" data-aos="fade-up" data-aos-delay="240">
+<i class="bi bi-kanban" aria-hidden="true"></i>
+<strong class="stat-value"><span class="count" data-count="10">10</span></strong>
+<span class="stat-label">projetos estratégicos liderados</span>
+</div>
+</div>
+</div>
 </section>
 
 <section id="about" class="about section">
@@ -86,20 +168,21 @@
   <div class="profile-card">
   <div class="profile-header">
   <div class="profile-avatar">
-  <img src="assets/img/profile/profile-square-3.webp" class="img-fluid" alt="">
+  <img src="assets/img/profile/profile-square-3.webp" class="img-fluid" alt="" loading="lazy" decoding="async">
   </div>
   <h3>André Pedroso<br>
   <span class="role">Analista de Infraestrutura</span></h3>
   </div>
   <div class="profile-actions">
-  <a href="arquivos/analista_andrepedroso.pdf" target="_blank" class="btn-primary"><i class="bi bi-download"></i> Download CV</a>
+  <a href="arquivos/analista_andrepedroso.pdf" target="_blank" rel="noopener noreferrer" class="btn-primary"><i class="bi bi-download"></i> Download CV</a>
   <a href="#contact" class="btn-secondary"><i class="bi bi-envelope"></i>Entre em contato</a>
   </div>
 
   <div class="social-connect">
-  <a href="http://linkedin.com/in/andrelpedroso" target="_blank"><i class="bi bi-linkedin"></i></a>
-  <a href="mailto:andrelp.pedroso@gmail.com" class="contact-url" target="_blank"><i class="bi bi-envelope"></i></a>
-  <a href="https://wa.me/5521993072147" target="_blank"><i class="bi bi-whatsapp" ></i></a>
+  <a href="http://linkedin.com/in/andrelpedroso" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
+  <a href="mailto:andrelp.pedroso@gmail.com" class="contact-url" target="_blank" rel="noopener noreferrer"><i class="bi bi-envelope"></i></a>
+  <a href="https://wa.me/5521993072147?text=Ol%C3%A1%20Andr%C3%A9%2C%20vi%20seu%20curr%C3%ADculo%20online%20e%20gostaria%20de%20conversar." data-wa target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp" ></i></a>
+  <a href="#" data-bs-toggle="modal" data-bs-target="#modalCartao" aria-label="Cartão de visita digital" title="Cartão de visita digital"><i class="bi bi-qr-code"></i></a>
   </div></div></div>
 
   <div class="col-lg-8" data-aos="fade-left" data-aos-delay="200">
@@ -164,7 +247,7 @@
 
   <div class="col-lg-3 text-center d-none d-lg-block">
   <div class="skills-center-circle">
-  <img src="assets/img/resume/softskill.png" style="width: 60px; " alt="">
+  <img src="assets/img/resume/softskill.png" style="width: 60px; " alt="" loading="lazy" decoding="async">
   <div class="pulse-ring"></div>
   </div></div>
 
@@ -195,7 +278,7 @@
   <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
   <div class="servicey-item">
   <div class="servicey-icon-wrapper">
-  <img src="assets/img/student/formacao1.jpg" alt="Colégio Realengo">
+  <img src="assets/img/student/formacao1.jpg" alt="Colégio Realengo" loading="lazy" decoding="async">
   </div>
   <div class="servicey-content">
   <h4>Tecnologia da Informação<br>
@@ -206,7 +289,7 @@
     <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="180">
   <div class="servicey-item">
   <div class="servicey-icon-wrapper">
-  <img src="assets/img/student/formacao3.jpg" alt="Centro Universitário São José">
+  <img src="assets/img/student/formacao3.jpg" alt="Centro Universitário São José" loading="lazy" decoding="async">
   </div>
   <div class="servicey-content">
   <h4>Administração<br>
@@ -217,7 +300,7 @@
   <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="230">
   <div class="servicey-item">
   <div class="servicey-icon-wrapper">
-  <img src="assets/img/student/formacao2.png" alt="Unisuam">
+  <img src="assets/img/student/formacao2.png" alt="Unisuam" loading="lazy" decoding="async">
   </div>
   <div class="servicey-content">
   <h4>Redes de Computadores<br>
@@ -228,7 +311,7 @@
    <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
   <div class="servicey-item">
   <div class="servicey-icon-wrapper">
-  <img src="assets/img/student/formacao2.png" alt="Unisuam">
+  <img src="assets/img/student/formacao2.png" alt="Unisuam" loading="lazy" decoding="async">
   </div>
   <div class="servicey-content">
   <h4>Gestão e Governança de TI<br>
@@ -255,18 +338,18 @@
   <!-- Para adicionar mais um selo: os selos vão de cert1.png a cert12.png (pasta assets/img/cert/). Para ter mais de 12, copie uma linha "swiper-slide" abaixo e troque o nome do arquivo. -->
   <div class="swiper certs-slider">
   <div class="swiper-wrapper align-items-center">
-  <div class="swiper-slide"><img src="assets/img/cert/cert1.png" alt="Selo de certificação 1" onerror="this.parentNode.classList.add('is-empty');this.remove();"><i class="bi bi-patch-check cert-fallback" aria-hidden="true"></i></div>
-  <div class="swiper-slide"><img src="assets/img/cert/cert2.png" alt="Selo de certificação 2" onerror="this.parentNode.classList.add('is-empty');this.remove();"><i class="bi bi-patch-check cert-fallback" aria-hidden="true"></i></div>
-  <div class="swiper-slide"><img src="assets/img/cert/cert3.png" alt="Selo de certificação 3" onerror="this.parentNode.classList.add('is-empty');this.remove();"><i class="bi bi-patch-check cert-fallback" aria-hidden="true"></i></div>
-  <div class="swiper-slide"><img src="assets/img/cert/cert4.png" alt="Selo de certificação 4" onerror="this.parentNode.classList.add('is-empty');this.remove();"><i class="bi bi-patch-check cert-fallback" aria-hidden="true"></i></div>
-  <div class="swiper-slide"><img src="assets/img/cert/cert5.png" alt="Selo de certificação 5" onerror="this.parentNode.classList.add('is-empty');this.remove();"><i class="bi bi-patch-check cert-fallback" aria-hidden="true"></i></div>
-  <div class="swiper-slide"><img src="assets/img/cert/cert6.png" alt="Selo de certificação 6" onerror="this.parentNode.classList.add('is-empty');this.remove();"><i class="bi bi-patch-check cert-fallback" aria-hidden="true"></i></div>
-  <div class="swiper-slide"><img src="assets/img/cert/cert7.png" alt="Selo de certificação 7" onerror="this.parentNode.classList.add('is-empty');this.remove();"><i class="bi bi-patch-check cert-fallback" aria-hidden="true"></i></div>
-  <div class="swiper-slide"><img src="assets/img/cert/cert8.png" alt="Selo de certificação 8" onerror="this.parentNode.classList.add('is-empty');this.remove();"><i class="bi bi-patch-check cert-fallback" aria-hidden="true"></i></div>
-  <div class="swiper-slide"><img src="assets/img/cert/cert9.png" alt="Selo de certificação 9" onerror="this.parentNode.classList.add('is-empty');this.remove();"><i class="bi bi-patch-check cert-fallback" aria-hidden="true"></i></div>
-  <div class="swiper-slide"><img src="assets/img/cert/cert10.png" alt="Selo de certificação 10" onerror="this.parentNode.classList.add('is-empty');this.remove();"><i class="bi bi-patch-check cert-fallback" aria-hidden="true"></i></div>
-  <div class="swiper-slide"><img src="assets/img/cert/cert11.png" alt="Selo de certificação 11" onerror="this.parentNode.classList.add('is-empty');this.remove();"><i class="bi bi-patch-check cert-fallback" aria-hidden="true"></i></div>
-  <div class="swiper-slide"><img src="assets/img/cert/cert12.png" alt="Selo de certificação 12" onerror="this.parentNode.classList.add('is-empty');this.remove();"><i class="bi bi-patch-check cert-fallback" aria-hidden="true"></i></div>
+  <div class="swiper-slide"><img src="assets/img/cert/cert1.png" alt="Selo de certificação 1" onerror="this.parentNode.classList.add('is-empty');this.remove();" loading="lazy" decoding="async"><i class="bi bi-patch-check cert-fallback" aria-hidden="true"></i></div>
+  <div class="swiper-slide"><img src="assets/img/cert/cert2.png" alt="Selo de certificação 2" onerror="this.parentNode.classList.add('is-empty');this.remove();" loading="lazy" decoding="async"><i class="bi bi-patch-check cert-fallback" aria-hidden="true"></i></div>
+  <div class="swiper-slide"><img src="assets/img/cert/cert3.png" alt="Selo de certificação 3" onerror="this.parentNode.classList.add('is-empty');this.remove();" loading="lazy" decoding="async"><i class="bi bi-patch-check cert-fallback" aria-hidden="true"></i></div>
+  <div class="swiper-slide"><img src="assets/img/cert/cert4.png" alt="Selo de certificação 4" onerror="this.parentNode.classList.add('is-empty');this.remove();" loading="lazy" decoding="async"><i class="bi bi-patch-check cert-fallback" aria-hidden="true"></i></div>
+  <div class="swiper-slide"><img src="assets/img/cert/cert5.png" alt="Selo de certificação 5" onerror="this.parentNode.classList.add('is-empty');this.remove();" loading="lazy" decoding="async"><i class="bi bi-patch-check cert-fallback" aria-hidden="true"></i></div>
+  <div class="swiper-slide"><img src="assets/img/cert/cert6.png" alt="Selo de certificação 6" onerror="this.parentNode.classList.add('is-empty');this.remove();" loading="lazy" decoding="async"><i class="bi bi-patch-check cert-fallback" aria-hidden="true"></i></div>
+  <div class="swiper-slide"><img src="assets/img/cert/cert7.png" alt="Selo de certificação 7" onerror="this.parentNode.classList.add('is-empty');this.remove();" loading="lazy" decoding="async"><i class="bi bi-patch-check cert-fallback" aria-hidden="true"></i></div>
+  <div class="swiper-slide"><img src="assets/img/cert/cert8.png" alt="Selo de certificação 8" onerror="this.parentNode.classList.add('is-empty');this.remove();" loading="lazy" decoding="async"><i class="bi bi-patch-check cert-fallback" aria-hidden="true"></i></div>
+  <div class="swiper-slide"><img src="assets/img/cert/cert9.png" alt="Selo de certificação 9" onerror="this.parentNode.classList.add('is-empty');this.remove();" loading="lazy" decoding="async"><i class="bi bi-patch-check cert-fallback" aria-hidden="true"></i></div>
+  <div class="swiper-slide"><img src="assets/img/cert/cert10.png" alt="Selo de certificação 10" onerror="this.parentNode.classList.add('is-empty');this.remove();" loading="lazy" decoding="async"><i class="bi bi-patch-check cert-fallback" aria-hidden="true"></i></div>
+  <div class="swiper-slide"><img src="assets/img/cert/cert11.png" alt="Selo de certificação 11" onerror="this.parentNode.classList.add('is-empty');this.remove();" loading="lazy" decoding="async"><i class="bi bi-patch-check cert-fallback" aria-hidden="true"></i></div>
+  <div class="swiper-slide"><img src="assets/img/cert/cert12.png" alt="Selo de certificação 12" onerror="this.parentNode.classList.add('is-empty');this.remove();" loading="lazy" decoding="async"><i class="bi bi-patch-check cert-fallback" aria-hidden="true"></i></div>
   </div></div></div>
   </section>
 
@@ -293,20 +376,20 @@
   <div class="exp-card featured" data-aos="zoom-in" data-aos-delay="300">
   <div class="card-header">
   <div class="company-logo">
-   <img src="assets/img/company/marko.png">
+   <img src="assets/img/company/marko.png" alt="Marko Sistemas Metálicos" loading="lazy" decoding="async">
   </div>
   <div class="period-badge">11/2025 - Até o momento</div>
   </div>
   <div class="card-body">
   <h3>Analista de Infraestrutura e Suporte</h3>
   <p class="company-name">Marko Sistemas Metálicos</p>
-  <p class="description">Gerenciamento de Infraestrutura - Administração e otimização de servidores (virtuais/físicos), sistemas operacionais, infraestrutura de rede e sistemas de vídeo monitoramento. Monitoramento proativo de ambientes de TI, assegurando a detecção e resolução imediata de problemas, visando a garantia da continuidade operacional. Suporte estratégico, prestando suporte  técnico ao usuário final, com foco em otimizar a experiência e produtividade do usuário.</p>
+  <p class="description">Liderança técnica da infraestrutura e do suporte de TI, orientando a equipe, organizando prioridades e padronizando processos, com foco em disponibilidade, segurança e continuidade operacional. Gestão da infraestrutura: administração de servidores físicos e virtuais, sistemas operacionais, redes e videomonitoramento. Monitoramento proativo dos ambientes de TI, com atuação na identificação e resolução de falhas. Participação em projetos de modernização tecnológica, acompanhando fornecedores nas etapas de alinhamento técnico, implantação, validação e entrega. Desenvolvimento de mais de 30 materiais de apoio, incluindo manuais, documentação técnica e fluxogramas, promovendo a padronização dos procedimentos. Participação em cotações e comparação de propostas, contribuindo para negociações com economia de pelo menos 10%.</p>
   </div> </div>
 
   <div class="exp-card" data-aos="zoom-in" data-aos-delay="350">
   <div class="card-header">
   <div class="company-logo">
-  <img src="assets/img/company/promotional.png">
+  <img src="assets/img/company/promotional.png" alt="Promotional Travel" loading="lazy" decoding="async">
   </div>
   <div class="period-badge">09/2024 - 11/2025</div>
   </div>
@@ -319,7 +402,7 @@
   <div class="exp-card" data-aos="zoom-in" data-aos-delay="400">
   <div class="card-header">
   <div class="company-logo">
-  <img src="assets/img/company/tupperware.png">
+  <img src="assets/img/company/tupperware.png" alt="Tupperware Brands" loading="lazy" decoding="async">
   </div>
   <div class="period-badge">11/2021 - 05/2024</div>
   </div>
@@ -338,9 +421,9 @@
 
   <div class="mini-logos">
   <div class="logo-grid">
-  <img src="assets/img/company/marista.png" alt="Claro" title="Claro">
-  <img src="assets/img/company/claro.png" alt="Claro" title="Claro">
-  <img src="assets/img/company/seeduc.png" alt="Governo do Estado" title="Governo do Estado">
+  <img src="assets/img/company/marista.png" alt="Colégio Marista" title="Colégio Marista" loading="lazy" decoding="async">
+  <img src="assets/img/company/claro.png" alt="Claro" title="Claro" loading="lazy" decoding="async">
+  <img src="assets/img/company/seeduc.png" alt="Governo do Estado" title="Governo do Estado" loading="lazy" decoding="async">
   </div></div></div></div></div></div></div>
 
   <div class="col-lg-6">
@@ -349,7 +432,7 @@
   <div class="header-content">
   <span class="section-badge">Projetos</span>
   <h2>Projetos Estratégicos</h2>
-  <p>Implementação de soluções de alto impacto voltadas para governança de dados e otimização de recursos. Do rollout de parques computacionais à estruturação de políticas de segurança no Office 365, meus projetos visam a conformidade com a LGPD e a redução de custos operacionais, garantindo que a tecnologia evolua de forma segura, escalável e inteligente.</p>
+  <p>Soluções de alto impacto conduzidas com visão estratégica e foco em resultado: da modernização da rede Wi-Fi corporativa à estruturação de políticas de segurança no Office 365, passando pelo rollout de grandes parques computacionais. Como liderança técnica, alinho fornecedores, equipes e requisitos de segurança para entregar conformidade com a LGPD, redução de custos e uma infraestrutura segura, escalável e padronizada.</p>
   </div>
   </div>
 
@@ -357,35 +440,15 @@
   <div class="timeline-track">
   <div class="timeline-item">
   <div class="timeline-marker">
-  <i class="bi bi-list"></i>
+  <i class="bi bi-wifi"></i>
   </div>
   <div class="timeline-content">
-   
-  <h4>Caixa de Correio Compartilhada</h4>
-  <p class="institution">Empresa: ALLLIG - Promotional Travel</p>
-  <p class="description">Projeto de modernização para substituir e-mails setoriais de senha única por Caixas de Correio Compartilhadas no Office 365. A iniciativa eliminou o risco de senhas compartilhadas e elevou a segurança e a governança da informação, garantindo rastreabilidade, controle de acesso individualizado e total conformidade com a LGPD (Lei Geral de Proteção de Dados) na gestão de e-mails de equipe.</p>
-  <div class="tag-row">
-  <span class="tag-manual">Office 365</span>
-  <span class="tag-manual">Segurança da Informação</span>
-  <span class="tag-manual">LGPD</span>
-  </div>
+  <h4>Fábrica Conectada</h4>
+  <p class="institution">Empresa: Marko Sistemas Metálicos</p>
+  <p class="description">Modernização da infraestrutura Wi-Fi corporativa, com a substituição de equipamentos legados Twibi por soluções UniFi para ganhar estabilidade, cobertura, desempenho e gestão centralizada da rede sem fio. Acompanhei tecnicamente a empresa contratada nas etapas de implantação, validação e entrega e, após a instalação, assumi a configuração e a administração do ambiente: segmentação de SSIDs, políticas de acesso e RADIUS, integração com as regras de firewall e boas práticas de segurança. O resultado foi uma melhor experiência para os usuários, maior controle administrativo e a padronização da infraestrutura Wi-Fi.</p>
+  <a href="#" class="btn-confira proj-open" data-bs-toggle="modal" data-bs-target="#modalFabrica" role="button"><i class="bi bi-diagram-3"></i> Ver arquitetura da solução</a>
   </div></div>
-
-  <div class="timeline-item">
-  <div class="timeline-marker">
-  <i class="bi bi-arrow-up-short"></i>
-  </div>
-  <div class="timeline-content">
-  <h4>Gerenciamento de Licenças - Office 365</h4>
-  <p class="institution">Empresa: ALLLIG - Promotional Travel</p>
-  <p class="description">Implementação de um plano estratégico de gerenciamento de licenças do Office 365 para promover eficiência, conformidade e redução de custos. O projeto focou na catalogação e reassociação rigorosa de licenças, garantindo que cada colaborador utilizasse apenas os recursos necessários. Este trabalho resultou na otimização do uso de recursos, redução de custos com licenças não utilizadas ou mal alocadas, além de garantir maior conformidade regulatória e agilidade na governança de TI.</p>
-  <div class="tag-row">
-  <span class="tag-manual">Office 365</span>
-  <span class="tag-manual">Governança de TI</span>
-  <span class="tag-manual">Redução de Custos</span>
-  </div>
-  </div></div>
-  <div class="timeline-item">
+  <div class="timeline-item grow">
   <div class="timeline-marker">
   <i class="bi bi-arrow-up-short"></i>
   </div>
@@ -393,6 +456,14 @@
   
   <h4>Outros Projetos</h4>
   <div class="certifications-list">
+  <div class="cert-item">
+  <span class="cert-name">Caixa de Correio Compartilhada (Office 365)</span>
+  <span class="cert-year" data-bs-toggle="modal" data-bs-target="#modalCaixa" style="cursor: pointer;">Saiba Mais</span>
+  </div>
+  <div class="cert-item">
+  <span class="cert-name">Gerenciamento de Licenças - Office 365</span>
+  <span class="cert-year" data-bs-toggle="modal" data-bs-target="#modalLicencas" style="cursor: pointer;">Saiba Mais</span>
+  </div>
   <div class="cert-item">
   <span class="cert-name">Sistema Híbrido de Ensino</span>
   <span class="cert-year" data-bs-toggle="modal" data-bs-target="#modalHibrido" style="cursor: pointer;">Saiba Mais</span>
@@ -421,33 +492,114 @@
   <span class="cert-name">Controle e Testes de 25.000 Dispositivos</span>
   <span class="cert-year" data-bs-toggle="modal" data-bs-target="#modalDispositivos" style="cursor: pointer;">Saiba Mais</span>
   </div>
-  </div></div></div></div></div></div></div></div></div></div>
+  </div></div></div>
+  <div class="timeline-item">
+  <div class="timeline-marker">
+  <i class="bi bi-chat-dots"></i>
+  </div>
+  <div class="timeline-content projects-cta">
+  <h4>Quer detalhes técnicos de algum projeto?</h4>
+  <p class="description">Posso apresentar o escopo, as decisões e os resultados de cada iniciativa em uma conversa.</p>
+  <a class="btn-confira" href="#contact">Fale comigo</a>
+  </div></div>
+  </div></div></div></div></div></div></div>
   </section>
+
+  <section id="tecnologias" class="techmap section">
+<div class="container section-title" data-aos="fade-up">
+<span class="subtitle">Ecossistema</span>
+<h2>Mapa de Tecnologias</h2>
+<p>Selecione uma tecnologia para ver onde eu a apliquei, ou uma experiência para ver as tecnologias envolvidas.</p>
+</div>
+<div class="container" data-aos="fade-up" data-aos-delay="100">
+<div class="tm-wrap">
+<div class="tm-col">
+<h3 class="tm-h">Tecnologias</h3>
+<div class="tm-group"><h4>Infraestrutura e redes</h4><div class="tm-chips">
+<button type="button" class="tm-chip tm-tech" data-tech="servers" aria-pressed="false">Servidores</button>
+<button type="button" class="tm-chip tm-tech" data-tech="network" aria-pressed="false">Redes e Wi-Fi</button>
+<button type="button" class="tm-chip tm-tech" data-tech="unifi" aria-pressed="false">UniFi</button>
+<button type="button" class="tm-chip tm-tech" data-tech="firewall" aria-pressed="false">Firewall e DHCP</button>
+<button type="button" class="tm-chip tm-tech" data-tech="radius" aria-pressed="false">RADIUS / NPS</button>
+<button type="button" class="tm-chip tm-tech" data-tech="cabling" aria-pressed="false">Cabeamento estruturado</button>
+<button type="button" class="tm-chip tm-tech" data-tech="datacenter" aria-pressed="false">Data Center</button>
+<button type="button" class="tm-chip tm-tech" data-tech="voip" aria-pressed="false">Telefonia e VoIP</button>
+</div></div>
+<div class="tm-group"><h4>Microsoft e nuvem</h4><div class="tm-chips">
+<button type="button" class="tm-chip tm-tech" data-tech="o365" aria-pressed="false">Office 365</button>
+<button type="button" class="tm-chip tm-tech" data-tech="ad" aria-pressed="false">Active Directory</button>
+<button type="button" class="tm-chip tm-tech" data-tech="teams" aria-pressed="false">Microsoft Teams</button>
+</div></div>
+<div class="tm-group"><h4>Monitoramento</h4><div class="tm-chips">
+<button type="button" class="tm-chip tm-tech" data-tech="zabbix" aria-pressed="false">Zabbix</button>
+<button type="button" class="tm-chip tm-tech" data-tech="grafana" aria-pressed="false">Grafana</button>
+<button type="button" class="tm-chip tm-tech" data-tech="video" aria-pressed="false">Videomonitoramento</button>
+</div></div>
+<div class="tm-group"><h4>Segurança e governança</h4><div class="tm-chips">
+<button type="button" class="tm-chip tm-tech" data-tech="infosec" aria-pressed="false">Segurança da Informação</button>
+<button type="button" class="tm-chip tm-tech" data-tech="lgpd" aria-pressed="false">LGPD</button>
+<button type="button" class="tm-chip tm-tech" data-tech="fortinet" aria-pressed="false">Fortinet NSE</button>
+<button type="button" class="tm-chip tm-tech" data-tech="ndd" aria-pressed="false">NDD (impressão segura)</button>
+<button type="button" class="tm-chip tm-tech" data-tech="governance" aria-pressed="false">Governança de TI</button>
+</div></div>
+<div class="tm-group"><h4>Gestão</h4><div class="tm-chips">
+<button type="button" class="tm-chip tm-tech" data-tech="projects" aria-pressed="false">Gestão de Projetos</button>
+<button type="button" class="tm-chip tm-tech" data-tech="assets" aria-pressed="false">Gestão de Ativos</button>
+<button type="button" class="tm-chip tm-tech" data-tech="rollout" aria-pressed="false">Rollout e provisionamento</button>
+</div></div>
+</div><div class="tm-col">
+<h3 class="tm-h">Onde apliquei</h3>
+<div class="tm-group"><h4>Experiências</h4><div class="tm-chips">
+<button type="button" class="tm-chip tm-item" data-item="marko" data-techs="servers network unifi firewall radius video projects" data-target="#resume" aria-pressed="false">Marko Sistemas Metálicos</button>
+<button type="button" class="tm-chip tm-item" data-item="promotional" data-techs="o365 voip" data-target="#resume" aria-pressed="false">Promotional Travel</button>
+<button type="button" class="tm-chip tm-item" data-item="tupperware" data-techs="servers ad zabbix grafana ndd" data-target="#resume" aria-pressed="false">Tupperware Brands</button>
+<button type="button" class="tm-chip tm-item" data-item="marista" data-techs="ad o365 voip network" data-target="#resume" aria-pressed="false">Colégio Marista</button>
+<button type="button" class="tm-chip tm-item" data-item="claro" data-techs="network" data-target="#resume" aria-pressed="false">Claro Brasil</button>
+<button type="button" class="tm-chip tm-item" data-item="seeduc" data-techs="datacenter voip cabling network assets projects" data-target="#resume" aria-pressed="false">SEEDUC/RJ</button>
+</div></div>
+<div class="tm-group"><h4>Projetos</h4><div class="tm-chips">
+<button type="button" class="tm-chip tm-item" data-item="fabrica" data-techs="unifi network firewall radius infosec projects" data-modal="modalFabrica" aria-pressed="false">Fábrica Conectada</button>
+<button type="button" class="tm-chip tm-item" data-item="caixa" data-techs="o365 infosec lgpd" data-modal="modalCaixa" aria-pressed="false">Caixa de Correio Compartilhada</button>
+<button type="button" class="tm-chip tm-item" data-item="licencas" data-techs="o365 governance" data-modal="modalLicencas" aria-pressed="false">Licenças do Office 365</button>
+<button type="button" class="tm-chip tm-item" data-item="documentos" data-techs="ndd infosec" data-modal="modalDocumentos" aria-pressed="false">Liberação Segura de Documentos</button>
+<button type="button" class="tm-chip tm-item" data-item="wifi" data-techs="network infosec projects" data-modal="modalWifi" aria-pressed="false">Wi-Fi com Segurança</button>
+<button type="button" class="tm-chip tm-item" data-item="inauguracao" data-techs="cabling servers rollout projects" data-modal="modalRollout" aria-pressed="false">Inauguração de Unidades Escolares</button>
+<button type="button" class="tm-chip tm-item" data-item="rollout" data-techs="rollout assets projects" data-modal="modalComputacional" aria-pressed="false">Rollout de Parque Computacional</button>
+<button type="button" class="tm-chip tm-item" data-item="dispositivos" data-techs="assets" data-modal="modalDispositivos" aria-pressed="false">25.000 Dispositivos Testados</button>
+<button type="button" class="tm-chip tm-item" data-item="hibrido" data-techs="teams" data-modal="modalHibrido" aria-pressed="false">Sistema Híbrido de Ensino</button>
+</div></div>
+<div class="tm-group"><h4>Certificações</h4><div class="tm-chips">
+<button type="button" class="tm-chip tm-item" data-item="nse" data-techs="fortinet infosec" data-target="#certificacoes" aria-pressed="false">Fortinet NSE 1, 2 e 3</button>
+<button type="button" class="tm-chip tm-item" data-item="ibsec" data-techs="infosec" data-target="#certificacoes" aria-pressed="false">IBSEC: SOC e Ransomware</button>
+</div></div>
+</div></div>
+<div class="tm-result" id="tm-result" aria-live="polite"><span class="tm-hint">Clique em um item para ver as conexões.</span></div>
+</div></section>
 
   <section id="clients" class="clients section">
   <div class="container" data-aos="fade-up">
   <div class="swiper clients-slider">
   <div class="swiper-wrapper align-items-center">
-  <div class="swiper-slide"><img src="assets/img/brand-logos/zabbix.png" class="img-fluid" alt="Logo 1"></div>
-  <div class="swiper-slide"><img src="assets/img/brand-logos/grafana.png" class="img-fluid" alt="Logo 2"></div>
-  <div class="swiper-slide"><img src="assets/img/brand-logos/google.png" class="img-fluid" alt="Logo 3"></div>
-  <div class="swiper-slide"><img src="assets/img/brand-logos/windows.png" class="img-fluid" alt="Logo 4"></div>
-  <div class="swiper-slide"><img src="assets/img/brand-logos/linux.png" class="img-fluid" alt="Logo 6"></div>
-  <div class="swiper-slide"><img src="assets/img/brand-logos/office365.png" class="img-fluid" alt="Logo 5"></div>
-  <div class="swiper-slide"><img src="assets/img/brand-logos/Fortinet_logo.svg" class="img-fluid" alt="Logo 7"></div>
-  <div class="swiper-slide"><img src="assets/img/brand-logos/unifi.png" class="img-fluid" alt="Logo 8"></div>
-  <div class="swiper-slide"><img src="assets/img/brand-logos/ruckus.png" class="img-fluid" alt="Logo 9"></div>
-  <div class="swiper-slide"><img src="assets/img/brand-logos/symantec.png" class="img-fluid" alt="Symantec" onerror="this.style.visibility='hidden'"></div>
-  <div class="swiper-slide"><img src="assets/img/brand-logos/zabbix.png" class="img-fluid" alt="Logo 1"></div>
-  <div class="swiper-slide"><img src="assets/img/brand-logos/grafana.png" class="img-fluid" alt="Logo 2"></div>
-  <div class="swiper-slide"><img src="assets/img/brand-logos/google.png" class="img-fluid" alt="Logo 3"></div>
-  <div class="swiper-slide"><img src="assets/img/brand-logos/windows.png" class="img-fluid" alt="Logo 4"></div>
-  <div class="swiper-slide"><img src="assets/img/brand-logos/linux.png" class="img-fluid" alt="Logo 6"></div>
-  <div class="swiper-slide"><img src="assets/img/brand-logos/office365.png" class="img-fluid" alt="Logo 5"></div>
-  <div class="swiper-slide"><img src="assets/img/brand-logos/Fortinet_logo.svg" class="img-fluid" alt="Logo 7"></div>
-  <div class="swiper-slide"><img src="assets/img/brand-logos/unifi.png" class="img-fluid" alt="Logo 8"></div>
-  <div class="swiper-slide"><img src="assets/img/brand-logos/ruckus.png" class="img-fluid" alt="Logo 8"></div>
-  <div class="swiper-slide"><img src="assets/img/brand-logos/symantec.png" class="img-fluid" alt="Symantec" onerror="this.style.visibility='hidden'"></div>
+  <div class="swiper-slide"><img src="assets/img/brand-logos/zabbix.png" class="img-fluid" alt="Zabbix" loading="lazy" decoding="async"></div>
+  <div class="swiper-slide"><img src="assets/img/brand-logos/grafana.png" class="img-fluid" alt="Grafana" loading="lazy" decoding="async"></div>
+  <div class="swiper-slide"><img src="assets/img/brand-logos/google.png" class="img-fluid" alt="Google" loading="lazy" decoding="async"></div>
+  <div class="swiper-slide"><img src="assets/img/brand-logos/windows.png" class="img-fluid" alt="Windows" loading="lazy" decoding="async"></div>
+  <div class="swiper-slide"><img src="assets/img/brand-logos/linux.png" class="img-fluid" alt="Linux" loading="lazy" decoding="async"></div>
+  <div class="swiper-slide"><img src="assets/img/brand-logos/office365.png" class="img-fluid" alt="Office 365" loading="lazy" decoding="async"></div>
+  <div class="swiper-slide"><img src="assets/img/brand-logos/Fortinet_logo.svg" class="img-fluid" alt="Fortinet" loading="lazy" decoding="async"></div>
+  <div class="swiper-slide"><img src="assets/img/brand-logos/unifi.png" class="img-fluid" alt="UniFi" loading="lazy" decoding="async"></div>
+  <div class="swiper-slide"><img src="assets/img/brand-logos/ruckus.png" class="img-fluid" alt="Ruckus" loading="lazy" decoding="async"></div>
+  <div class="swiper-slide"><img src="assets/img/brand-logos/symantec.png" class="img-fluid" alt="Symantec" onerror="this.style.visibility='hidden'" loading="lazy" decoding="async"></div>
+  <div class="swiper-slide"><img src="assets/img/brand-logos/zabbix.png" class="img-fluid" alt="Zabbix" loading="lazy" decoding="async"></div>
+  <div class="swiper-slide"><img src="assets/img/brand-logos/grafana.png" class="img-fluid" alt="Grafana" loading="lazy" decoding="async"></div>
+  <div class="swiper-slide"><img src="assets/img/brand-logos/google.png" class="img-fluid" alt="Google" loading="lazy" decoding="async"></div>
+  <div class="swiper-slide"><img src="assets/img/brand-logos/windows.png" class="img-fluid" alt="Windows" loading="lazy" decoding="async"></div>
+  <div class="swiper-slide"><img src="assets/img/brand-logos/linux.png" class="img-fluid" alt="Linux" loading="lazy" decoding="async"></div>
+  <div class="swiper-slide"><img src="assets/img/brand-logos/office365.png" class="img-fluid" alt="Office 365" loading="lazy" decoding="async"></div>
+  <div class="swiper-slide"><img src="assets/img/brand-logos/Fortinet_logo.svg" class="img-fluid" alt="Fortinet" loading="lazy" decoding="async"></div>
+  <div class="swiper-slide"><img src="assets/img/brand-logos/unifi.png" class="img-fluid" alt="UniFi" loading="lazy" decoding="async"></div>
+  <div class="swiper-slide"><img src="assets/img/brand-logos/ruckus.png" class="img-fluid" alt="Ruckus" loading="lazy" decoding="async"></div>
+  <div class="swiper-slide"><img src="assets/img/brand-logos/symantec.png" class="img-fluid" alt="Symantec" onerror="this.style.visibility='hidden'" loading="lazy" decoding="async"></div>
   </div></div></div>
   </section>
 
@@ -463,7 +615,7 @@
   <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
   <div class="service-item">
   <div class="stat-icon-box icon-exp">
-  <img src="assets/img/resume/experiencia.png">
+  <img src="assets/img/resume/experiencia.png" loading="lazy" decoding="async">
   </div>
   <h4>Experiência<br>
   <span style="font-size: 16px;" class="stat-highlight">+15 Anos</span></h4>
@@ -473,7 +625,7 @@
   <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
   <div class="service-item">
   <div class="stat-icon-box icon-service">
-  <img src="assets/img/resume/atendimento.png">
+  <img src="assets/img/resume/atendimento.png" loading="lazy" decoding="async">
   </div>
   <h4>Atendimento<br>
   <span style="font-size: 16px;" class="stat-highlight">+1500 Usuários</span></h4>
@@ -482,7 +634,7 @@
   <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
   <div class="service-item">
   <div class="stat-icon-box icon-uptime">
-  <img src="assets/img/resume/disponibilidade.png">
+  <img src="assets/img/resume/disponibilidade.png" loading="lazy" decoding="async">
   </div>
   <h4>Disponibilidade<br>
   <span style="font-size: 16px;" class="stat-highlight">+99% Uptime</span></h4>
@@ -492,7 +644,7 @@
   <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="400">
   <div class="service-item">
   <div class="stat-icon-box icon-lead">
-  <img src="assets/img/resume/lideranca.png">
+  <img src="assets/img/resume/lideranca.png" loading="lazy" decoding="async">
   </div>
   <h4>Liderança<br>
   <span style="font-size: 16px;" class="stat-highlight">+10 Projetos</span></h4>
@@ -632,6 +784,7 @@
 <span class="subtitle">Recomendações</span>
 <h2>O que dizem os colegas e parceiros sobre meu trabalho</h2>
 </div>
+<p class="rec-note" data-lang-only="en" data-i18n-skip>Testimonials are shown in their original language (Portuguese).</p>
 
   <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -666,7 +819,7 @@
   <div class="testimonial-item">
   <div class="testimonial-content">
   <div class="profile">
-  <img src="assets/img/recomend/recomend1.jpg" class="testimonial-img">
+  <img src="assets/img/recomend/recomend1.jpg" class="testimonial-img" loading="lazy" decoding="async">
   <div class="profile-info">
   <h3>Pablo Azevedo</h3>
   <span class="subtitulo">Supervisor de Projetos</span>
@@ -686,7 +839,7 @@
   <div class="testimonial-content">
 
   <div class="profile">
-  <img src="assets/img/recomend/recomend2.jpg" class="testimonial-img">
+  <img src="assets/img/recomend/recomend2.jpg" class="testimonial-img" loading="lazy" decoding="async">
   <div class="profile-info">
   <h3>Fabio Toste</h3>
   <span class="subtitulo">Analista de Infraestrutura</span>
@@ -704,7 +857,7 @@
   <div class="testimonial-item">
   <div class="testimonial-content">
   <div class="profile">
-  <img src="assets/img/recomend/recomend4.jpg" class="testimonial-img">
+  <img src="assets/img/recomend/recomend4.jpg" class="testimonial-img" loading="lazy" decoding="async">
   <div class="profile-info">
   <h3>Ronaldo Santos</h3>
   <span class="subtitulo">Enfermeiro do Trabalho</span>
@@ -722,7 +875,7 @@
   <div class="testimonial-item">
   <div class="testimonial-content">
   <div class="profile">
-  <img src="assets/img/recomend/recomend8.jpg" class="testimonial-img">
+  <img src="assets/img/recomend/recomend8.jpg" class="testimonial-img" loading="lazy" decoding="async">
   <div class="profile-info">
   <h3>Samira Dagnaisser</h3>
   <span class="subtitulo">Consultor de Viagens Senior</span>
@@ -752,7 +905,7 @@ Qualquer equipe certamente terá muito a ganhar contando com seu conhecimento, d
   <div class="testimonial-content">
 
   <div class="profile">
-  <img src="assets/img/recomend/recomend3.jpg" class="testimonial-img">
+  <img src="assets/img/recomend/recomend3.jpg" class="testimonial-img" loading="lazy" decoding="async">
   <div class="profile-info">
   <h3>Tiago Lima</h3>
   <span class="subtitulo">Analista de Suporte</span>
@@ -768,7 +921,7 @@ Qualquer equipe certamente terá muito a ganhar contando com seu conhecimento, d
   <div class="testimonial-item">
   <div class="testimonial-content">
   <div class="profile">
-  <img src="assets/img/recomend/recomend5.jpg" class="testimonial-img">
+  <img src="assets/img/recomend/recomend5.jpg" class="testimonial-img" loading="lazy" decoding="async">
   <div class="profile-info">
   <h3>Raphael Brilhante</h3>
   <span class="subtitulo">Analista de Infraestrutura</span>
@@ -788,7 +941,7 @@ Qualquer equipe certamente terá muito a ganhar contando com seu conhecimento, d
   <div class="testimonial-content">
 
   <div class="profile">
-  <img src="assets/img/recomend/recomend6.jpg" class="testimonial-img">
+  <img src="assets/img/recomend/recomend6.jpg" class="testimonial-img" loading="lazy" decoding="async">
   <div class="profile-info">
   <h3>Samuel Azevedo</h3>
   <span class="subtitulo">Profissional de TI</span>
@@ -820,7 +973,7 @@ Qualquer equipe certamente terá muito a ganhar contando com seu conhecimento, d
   <div class="col-lg-4 d-flex" data-aos="fade-up" data-aos-delay="100">
   <div class="animated-border-box flex-grow-1">
   <div class="animated-border-inner">
-  <img src="assets/img/theme/back-neutro.jpg" alt="Contatos" class="contact-img">
+  <img src="assets/img/theme/back-neutro.jpg" alt="Contatos" class="contact-img" loading="lazy" decoding="async">
   
   <div class="overlay-content contacts-column-overlay">
   
@@ -829,7 +982,7 @@ Qualquer equipe certamente terá muito a ganhar contando com seu conhecimento, d
 <i class="bi bi-linkedin contact-icon"></i>
   <div class="contact-content">
   <span class="contact-label">Linkedin</span>
-  <a href="http://linkedin.com/in/andrelpedroso" class="contact-url" target="_blank">linkedin.com/in/andrelpedroso</a>
+  <a href="http://linkedin.com/in/andrelpedroso" class="contact-url" target="_blank" rel="noopener noreferrer">linkedin.com/in/andrelpedroso</a>
   </div>
   </div>
 
@@ -837,7 +990,7 @@ Qualquer equipe certamente terá muito a ganhar contando com seu conhecimento, d
   <i class="bi bi-whatsapp contact-icon"></i>
   <div class="contact-content">
   <span class="contact-label">Whatsapp</span>
-  <a href="https://wa.me/5521993072147" class="contact-url" target="_blank">+55 21 99307-2147</a>
+  <a href="https://wa.me/5521993072147?text=Ol%C3%A1%20Andr%C3%A9%2C%20vi%20seu%20curr%C3%ADculo%20online%20e%20gostaria%20de%20conversar." data-wa class="contact-url" target="_blank" rel="noopener noreferrer">+55 21 99307-2147</a>
   </div>
   </div>
 
@@ -845,13 +998,23 @@ Qualquer equipe certamente terá muito a ganhar contando com seu conhecimento, d
   <i class="bi bi-envelope-at-fill contact-icon"></i>
   <div class="contact-content">
   <span class="contact-label">E-mail</span>
-  <a href="mailto:andrelp.pedroso@gmail.com" class="contact-url" target="_blank">andrelp.pedroso@gmail.com</a>
-  </div> </div> </div> </div> </div> </div>  </div>
+  <a href="mailto:andrelp.pedroso@gmail.com" class="contact-url" target="_blank" rel="noopener noreferrer">andrelp.pedroso@gmail.com</a>
+  </div>
+  </div>
+
+  <div class="contact-item">
+  <i class="bi bi-qr-code contact-icon"></i>
+  <div class="contact-content">
+  <span class="contact-label">Cartão digital</span>
+  <a href="#" class="contact-url" data-bs-toggle="modal" data-bs-target="#modalCartao">Abrir QR do WhatsApp e salvar contato</a>
+  </div>
+  </div>
+  </div> </div> </div> </div>  </div>
 
   <div class="col-lg-8 d-flex" data-aos="fade-up" data-aos-delay="200">
   <div class="animated-border-box flex-grow-1"> 
   <div class="animated-border-inner">
-  <img src="assets/img/theme/contato-neutro.jpg" alt="Contato" class="contact-img">
+  <img src="assets/img/theme/contato-neutro.jpg" alt="Contato" class="contact-img" loading="lazy" decoding="async">
   
   <div class="overlay-content">
   <span class="badge-tech">Disponível para Projetos</span>
@@ -864,9 +1027,11 @@ Qualquer equipe certamente terá muito a ganhar contando com seu conhecimento, d
   <footer id="footer" class="footer">
   <div class="container copyright text-center mt-4">
   <p>© <span>André Pedroso</span> | <span>Desenvolvido para destacar excelência em TI</span></p>
+  <p class="kbd-hint d-none d-md-block">Dica: pressione <kbd>Ctrl</kbd> + <kbd>K</kbd> para navegar rapidamente</p>
   </div>
 
   </footer>
+  <a href="https://wa.me/5521993072147?text=Ol%C3%A1%20Andr%C3%A9%2C%20vi%20seu%20curr%C3%ADculo%20online%20e%20gostaria%20de%20conversar." data-wa id="wa-fab" class="wa-fab" target="_blank" rel="noopener noreferrer" aria-label="Falar no WhatsApp"><i class="bi bi-whatsapp" aria-hidden="true"></i><span>Fale comigo</span></a>
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
   <div id="preloader"></div>
 
@@ -879,7 +1044,10 @@ Qualquer equipe certamente terá muito a ganhar contando com seu conhecimento, d
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/i18n-en.js"></script>
+  <script src="assets/js/i18n.js"></script>
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/extras.js"></script>
 
 <div class="modal fade" id="outrasexp" tabindex="-1" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
@@ -1072,6 +1240,93 @@ Qualquer equipe certamente terá muito a ganhar contando com seu conhecimento, d
   <span class="tag-manual">Gestão de Ativos</span>
   </p>
   </div></div></div></div>
+<div class="modal fade" id="modalCaixa" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+  <div class="modal-content" style="background-color: var(--surface-color); color: var(--default-color); border: 1px solid var(--accent-color);">
+  <div class="modal-header" style="border-bottom: 1px solid #333;">
+  <h5 class="modal-title" >Caixa de Correio Compartilhada</h5>
+  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+  </div>
+  <div class="modal-body">
+  <p>Empresa: ALLLIG - Promotional Travel</p>
+  <p>Projeto de modernização para substituir e-mails setoriais de senha única por Caixas de Correio Compartilhadas no Office 365. A iniciativa eliminou o risco de senhas compartilhadas e elevou a segurança e a governança da informação, garantindo rastreabilidade, controle de acesso individualizado e total conformidade com a LGPD (Lei Geral de Proteção de Dados) na gestão de e-mails de equipe.</p>
+  <br><p>
+  <span class="tag-manual">Office 365</span>
+  <span class="tag-manual">Segurança da Informação</span>
+  <span class="tag-manual">LGPD</span></p>
+  </div></div></div></div>
+
+<div class="modal fade" id="modalLicencas" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+  <div class="modal-content" style="background-color: var(--surface-color); color: var(--default-color); border: 1px solid var(--accent-color);">
+  <div class="modal-header" style="border-bottom: 1px solid #333;">
+  <h5 class="modal-title" >Gerenciamento de Licenças - Office 365</h5>
+  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+  </div>
+  <div class="modal-body">
+  <p>Empresa: ALLLIG - Promotional Travel</p>
+  <p>Implementação de um plano estratégico de gerenciamento de licenças do Office 365 para promover eficiência, conformidade e redução de custos. O projeto focou na catalogação e reassociação rigorosa de licenças, garantindo que cada colaborador utilizasse apenas os recursos necessários. Este trabalho resultou na otimização do uso de recursos, redução de custos com licenças não utilizadas ou mal alocadas, além de garantir maior conformidade regulatória e agilidade na governança de TI.</p>
+  <br><p>
+  <span class="tag-manual">Office 365</span>
+  <span class="tag-manual">Governança de TI</span>
+  <span class="tag-manual">Redução de Custos</span></p>
+  </div></div></div></div>
+
+<div class="modal fade" id="modalFabrica" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+  <div class="modal-content" style="background-color: var(--surface-color); color: var(--default-color); border: 1px solid var(--accent-color);">
+  <div class="modal-header" style="border-bottom: 1px solid #333;">
+  <h5 class="modal-title">Fábrica Conectada &middot; Arquitetura da solução</h5>
+  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+  </div>
+  <div class="modal-body">
+  <p class="fx-lead">Modernização do Wi-Fi corporativo: de equipamentos legados Twibi para o ecossistema UniFi, com rede segmentada, autenticação via RADIUS e políticas aplicadas no firewall.</p>
+  <div class="proj-facts">
+  <div><strong>12</strong><span>access points UniFi</span></div>
+  <div><strong>5</strong><span>SSIDs, incluindo Guest</span></div>
+  <div><strong>NPS</strong><span>autenticação RADIUS</span></div>
+  </div>
+  <div class="fx-diagram">
+  <svg class="fx-svg fx-desk" viewBox="0 0 960 380" role="group" aria-label="Diagrama ilustrativo da rede Wi-Fi"><path class="fx-line" d="M110 185 H150"/><path class="fx-line" d="M300 185 H340"/><path class="fx-line" d="M470 185 H520"/><path class="fx-line alt" d="M225 250 V300"/><path class="fx-line" d="M710 185 C740 185 740 85 770 85"/><path class="fx-line" d="M710 185 C740 185 740 145 770 145"/><path class="fx-line" d="M710 185 C740 185 740 205 770 205"/><path class="fx-line" d="M710 185 C740 185 740 265 770 265"/><path class="fx-line" d="M710 185 C740 185 740 325 770 325"/><circle class="fx-pkt" r="3.5"><animateMotion dur="1.6s" begin="0s" repeatCount="indefinite" path="M110 185 H150"/></circle><circle class="fx-pkt" r="3.5"><animateMotion dur="1.6s" begin="0.5s" repeatCount="indefinite" path="M300 185 H340"/></circle><circle class="fx-pkt" r="3.5"><animateMotion dur="1.6s" begin="1s" repeatCount="indefinite" path="M470 185 H520"/></circle><g class="fx-node" data-key="internet" tabindex="0" role="button" aria-label="Internet"><rect class="fx-box" x="10" y="150" width="100" height="70" rx="12"/><text class="fx-t b" x="60" y="191" text-anchor="middle">Internet</text></g><g class="fx-node" data-key="fw" tabindex="0" role="button" aria-label="Firewall"><rect class="fx-box" x="150" y="120" width="150" height="130" rx="12"/><text class="fx-t b" x="225" y="168" text-anchor="middle">Firewall</text><text class="fx-t s" x="225" y="194" text-anchor="middle">Policies de acesso</text><text class="fx-t s" x="225" y="214" text-anchor="middle">Servidor DHCP</text></g><g class="fx-node" data-key="radius" tabindex="0" role="button" aria-label="Servidor NPS RADIUS"><rect class="fx-box" x="150" y="300" width="150" height="56" rx="12"/><text class="fx-t b" x="225" y="325" text-anchor="middle">Servidor NPS</text><text class="fx-t s" x="225" y="344" text-anchor="middle">RADIUS</text></g><g class="fx-node" data-key="gateway" tabindex="0" role="button" aria-label="UniFi Gateway Ultra"><rect class="fx-box" x="340" y="145" width="130" height="80" rx="12"/><text class="fx-t b" x="405" y="182" text-anchor="middle">UniFi Gateway</text><text class="fx-t s" x="405" y="204" text-anchor="middle">Ultra</text></g><g class="fx-node" data-key="aps" tabindex="0" role="button" aria-label="12 Access Points UniFi"><rect class="fx-box" x="520" y="70" width="190" height="230" rx="14"/><text class="fx-t b" x="615" y="100" text-anchor="middle">12 Access Points UniFi</text><circle class="fx-ap" cx="555" cy="140" r="13"/><circle class="fx-apdot" cx="555" cy="140" r="4"/><circle class="fx-ap" cx="615" cy="140" r="13"/><circle class="fx-apdot" cx="615" cy="140" r="4"/><circle class="fx-ap" cx="675" cy="140" r="13"/><circle class="fx-apdot" cx="675" cy="140" r="4"/><circle class="fx-ap" cx="555" cy="180" r="13"/><circle class="fx-apdot" cx="555" cy="180" r="4"/><circle class="fx-ap" cx="615" cy="180" r="13"/><circle class="fx-apdot" cx="615" cy="180" r="4"/><circle class="fx-ap" cx="675" cy="180" r="13"/><circle class="fx-apdot" cx="675" cy="180" r="4"/><circle class="fx-ap" cx="555" cy="220" r="13"/><circle class="fx-apdot" cx="555" cy="220" r="4"/><circle class="fx-ap" cx="615" cy="220" r="13"/><circle class="fx-apdot" cx="615" cy="220" r="4"/><circle class="fx-ap" cx="675" cy="220" r="13"/><circle class="fx-apdot" cx="675" cy="220" r="4"/><circle class="fx-ap" cx="555" cy="260" r="13"/><circle class="fx-apdot" cx="555" cy="260" r="4"/><circle class="fx-ap" cx="615" cy="260" r="13"/><circle class="fx-apdot" cx="615" cy="260" r="4"/><circle class="fx-ap" cx="675" cy="260" r="13"/><circle class="fx-apdot" cx="675" cy="260" r="4"/></g><text class="fx-t s" x="860" y="48" text-anchor="middle">5 SSIDs</text><g class="fx-node" data-key="ssid" tabindex="0" role="button" aria-label="SSID 1"><rect class="fx-box" x="770" y="65" width="180" height="40" rx="20"/><text class="fx-t" x="860" y="90" text-anchor="middle">SSID 1</text></g><g class="fx-node" data-key="ssid" tabindex="0" role="button" aria-label="SSID 2"><rect class="fx-box" x="770" y="125" width="180" height="40" rx="20"/><text class="fx-t" x="860" y="150" text-anchor="middle">SSID 2</text></g><g class="fx-node" data-key="ssid" tabindex="0" role="button" aria-label="SSID 3"><rect class="fx-box" x="770" y="185" width="180" height="40" rx="20"/><text class="fx-t" x="860" y="210" text-anchor="middle">SSID 3</text></g><g class="fx-node" data-key="ssid" tabindex="0" role="button" aria-label="SSID 4"><rect class="fx-box" x="770" y="245" width="180" height="40" rx="20"/><text class="fx-t" x="860" y="270" text-anchor="middle">SSID 4</text></g><g class="fx-node fx-guest" data-key="guest" tabindex="0" role="button" aria-label="SSID Guest"><rect class="fx-box" x="770" y="305" width="180" height="40" rx="20"/><text class="fx-t" x="860" y="330" text-anchor="middle">SSID Guest</text></g></svg>
+  <svg class="fx-svg fx-mob" viewBox="0 0 340 680" role="group" aria-label="Diagrama ilustrativo da rede Wi-Fi"><path class="fx-line" d="M170 54 V90"/><path class="fx-line" d="M105 174 V204"/><path class="fx-line" d="M170 250 V280"/><path class="fx-line alt" d="M200 132 H215"/><path class="fx-line" d="M170 420 V440 H48 V645"/><path class="fx-line" d="M48 477 H60"/><path class="fx-line" d="M48 519 H60"/><path class="fx-line" d="M48 561 H60"/><path class="fx-line" d="M48 603 H60"/><path class="fx-line" d="M48 645 H60"/><g class="fx-node" data-key="internet" tabindex="0" role="button" aria-label="Internet"><rect class="fx-box" x="100" y="10" width="140" height="44" rx="12"/><text class="fx-t b" x="170" y="38" text-anchor="middle">Internet</text></g><g class="fx-node" data-key="fw" tabindex="0" role="button" aria-label="Firewall"><rect class="fx-box" x="10" y="90" width="190" height="84" rx="12"/><text class="fx-t b" x="105" y="125" text-anchor="middle">Firewall</text><text class="fx-t s" x="105" y="148" text-anchor="middle">Policies · DHCP</text></g><g class="fx-node" data-key="radius" tabindex="0" role="button" aria-label="Servidor NPS RADIUS"><rect class="fx-box" x="215" y="90" width="115" height="84" rx="12"/><text class="fx-t b" x="272" y="125" text-anchor="middle">NPS</text><text class="fx-t s" x="272" y="148" text-anchor="middle">RADIUS</text></g><g class="fx-node" data-key="gateway" tabindex="0" role="button" aria-label="UniFi Gateway Ultra"><rect class="fx-box" x="60" y="204" width="220" height="46" rx="12"/><text class="fx-t b" x="170" y="233" text-anchor="middle">UniFi Gateway Ultra</text></g><g class="fx-node" data-key="aps" tabindex="0" role="button" aria-label="12 Access Points UniFi"><rect class="fx-box" x="40" y="280" width="260" height="140" rx="14"/><text class="fx-t b" x="170" y="306" text-anchor="middle">12 Access Points UniFi</text><circle class="fx-ap" cx="75" cy="346" r="13"/><circle class="fx-apdot" cx="75" cy="346" r="4"/><circle class="fx-ap" cx="113" cy="346" r="13"/><circle class="fx-apdot" cx="113" cy="346" r="4"/><circle class="fx-ap" cx="151" cy="346" r="13"/><circle class="fx-apdot" cx="151" cy="346" r="4"/><circle class="fx-ap" cx="189" cy="346" r="13"/><circle class="fx-apdot" cx="189" cy="346" r="4"/><circle class="fx-ap" cx="227" cy="346" r="13"/><circle class="fx-apdot" cx="227" cy="346" r="4"/><circle class="fx-ap" cx="265" cy="346" r="13"/><circle class="fx-apdot" cx="265" cy="346" r="4"/><circle class="fx-ap" cx="75" cy="388" r="13"/><circle class="fx-apdot" cx="75" cy="388" r="4"/><circle class="fx-ap" cx="113" cy="388" r="13"/><circle class="fx-apdot" cx="113" cy="388" r="4"/><circle class="fx-ap" cx="151" cy="388" r="13"/><circle class="fx-apdot" cx="151" cy="388" r="4"/><circle class="fx-ap" cx="189" cy="388" r="13"/><circle class="fx-apdot" cx="189" cy="388" r="4"/><circle class="fx-ap" cx="227" cy="388" r="13"/><circle class="fx-apdot" cx="227" cy="388" r="4"/><circle class="fx-ap" cx="265" cy="388" r="13"/><circle class="fx-apdot" cx="265" cy="388" r="4"/></g><text class="fx-t s" x="170" y="452" text-anchor="middle">5 SSIDs</text><g class="fx-node" data-key="ssid" tabindex="0" role="button" aria-label="SSID 1"><rect class="fx-box" x="60" y="460" width="220" height="34" rx="17"/><text class="fx-t" x="170" y="482" text-anchor="middle">SSID 1</text></g><g class="fx-node" data-key="ssid" tabindex="0" role="button" aria-label="SSID 2"><rect class="fx-box" x="60" y="502" width="220" height="34" rx="17"/><text class="fx-t" x="170" y="524" text-anchor="middle">SSID 2</text></g><g class="fx-node" data-key="ssid" tabindex="0" role="button" aria-label="SSID 3"><rect class="fx-box" x="60" y="544" width="220" height="34" rx="17"/><text class="fx-t" x="170" y="566" text-anchor="middle">SSID 3</text></g><g class="fx-node" data-key="ssid" tabindex="0" role="button" aria-label="SSID 4"><rect class="fx-box" x="60" y="586" width="220" height="34" rx="17"/><text class="fx-t" x="170" y="608" text-anchor="middle">SSID 4</text></g><g class="fx-node fx-guest" data-key="guest" tabindex="0" role="button" aria-label="SSID Guest"><rect class="fx-box" x="60" y="628" width="220" height="34" rx="17"/><text class="fx-t" x="170" y="650" text-anchor="middle">SSID Guest (visitantes)</text></g></svg>
+  <div class="fx-info" id="fx-info" aria-live="polite"><strong>Clique em um elemento</strong><span>Toque ou clique em qualquer parte do diagrama para ver o papel dela na solução.</span></div>
+  <p class="fx-note">Diagrama ilustrativo da arquitetura, sem detalhes sensíveis do ambiente.</p>
+  </div>
+  <h6 class="fx-h">Etapas do projeto</h6>
+  <div class="fx-steps">
+  <div class="fx-step"><b>1</b><h6>Necessidade</h6><p>Elevar a estabilidade, a cobertura, o desempenho e o gerenciamento da rede Wi-Fi corporativa.</p></div>
+  <div class="fx-step"><b>2</b><h6>Implantação</h6><p>Acompanhamento técnico da empresa contratada na instalação dos equipamentos UniFi.</p></div>
+  <div class="fx-step"><b>3</b><h6>Validação</h6><p>Alinhamento com as necessidades operacionais e com os padrões internos de segurança e conectividade.</p></div>
+  <div class="fx-step"><b>4</b><h6>Entrega</h6><p>Aceite do projeto e padronização da infraestrutura Wi-Fi no ecossistema UniFi.</p></div>
+  <div class="fx-step"><b>5</b><h6>Operação</h6><p>Configuração e administração: SSIDs segmentados, políticas de acesso, RADIUS, DHCP, regras de firewall e otimização da cobertura.</p></div>
+  </div>
+  <div class="fx-result"><i class="bi bi-check2-circle"></i> Resultado: melhor experiência dos usuários, maior controle administrativo e Wi-Fi corporativo padronizado.</div>
+  <br><p>
+  <span class="tag-manual">UniFi</span>
+  <span class="tag-manual">RADIUS / NPS</span>
+  <span class="tag-manual">Firewall</span>
+  <span class="tag-manual">Segmentação de Rede</span></p>
+  </div></div></div></div>
+
+<div class="modal fade" id="modalCartao" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+  <div class="modal-content" style="background-color: var(--surface-color); color: var(--default-color); border: 1px solid var(--accent-color);">
+  <div class="modal-header" style="border-bottom: 1px solid #333;">
+  <h5 class="modal-title">Cartão de visita digital</h5>
+  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+  </div>
+  <div class="modal-body vc-body">
+  <div class="vc-qr"><img src="assets/img/theme/qr-whatsapp.svg" alt="QR code para chamar André Pedroso no WhatsApp" width="220" height="220"></div>
+  <p class="vc-name"><strong>André Pedroso</strong><br><span>Analista de Infraestrutura e Suporte &middot; Rio de Janeiro</span></p>
+  <p class="vc-hint">Aponte a câmera do celular para me chamar no WhatsApp.</p>
+  <div class="vc-actions">
+  <a class="btn-confira vc-btn" href="arquivos/andre-pedroso.vcf" download="andre-pedroso.vcf"><i class="bi bi-person-plus"></i> Salvar contato</a>
+  <button type="button" class="btn-confira vc-btn vc-copy"><i class="bi bi-link-45deg"></i> Copiar link do site</button>
+  <button type="button" class="btn-confira vc-btn vc-share" hidden><i class="bi bi-share"></i> Compartilhar</button>
+  </div>
+  <p class="vc-toast" aria-live="polite"></p>
+  </div></div></div></div>
+
 <script>
   document.addEventListener('contextmenu', event => event.preventDefault());
 
